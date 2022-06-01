@@ -17,7 +17,7 @@ const schema = makeExecutableSchema({
 app.use(
   '/graphql',
   graphqlHTTP({
-    schema: schema,
+    schema,
     graphiql: true,
   })
 )
