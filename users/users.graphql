@@ -1,0 +1,14 @@
+type Query {
+  users: [Users]
+}
+
+type Mutation {
+  addUser(id: ID, fName: String, lName: String, job: String): Users
+}
+
+type Users {
+  id: ID
+  fName: String
+  lName: String
+  job: String
+}
